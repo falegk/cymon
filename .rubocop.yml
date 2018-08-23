@@ -1,0 +1,39 @@
+# Configurations: http://rubocop.readthedocs.io/en/latest/configuration/#configuration
+
+AllCops:
+  TargetRubyVersion: 2.5
+
+Documentation:
+  Enabled: false
+
+Style/Encoding:
+  Enabled: false
+
+Style/AndOr:
+  Enabled: false
+
+Style/BracesAroundHashParameters:
+  EnforcedStyle: context_dependent
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/AbcSize:
+  Max: 20
+
+TrailingBlankLines:
+  Enabled: false
+
+FrozenStringLiteralComment:
+  Enabled: false
+
+CaseIndentation:
+  # Valid values are: case, end
+  EnforcedStyle: case
+  IndentOneStep: true
+
+#Metrics/CyclomaticComplexity:
+#  Severity: warning
