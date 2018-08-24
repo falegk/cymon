@@ -84,7 +84,7 @@ module Cymon
       private
 
       def default_params(params)
-        params.slice(:from, :size, :startDate, :endDate)
+        params.select { |key, _value| [:from, :size, :startDate, :endDate].include?(key) }
       end
     end
   end
