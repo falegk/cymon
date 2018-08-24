@@ -1,4 +1,4 @@
-# Cymon
+# Cymon [![Build Status](https://travis-ci.org/falegk/cymon.svg?branch=master)](https://travis-ci.org/falegk/cymon)
 
 A Ruby client gem for [Cymon.io](https://cymon.io) API
 
