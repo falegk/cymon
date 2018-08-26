@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cymon.io/v2/ioc/search/sha1/736a602300a0476b738a53ee7feb5f9bfabca1b0?size=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      content-length:
+      - '39'
+      connection:
+      - close
+      date:
+      - Thu, 23 Aug 2018 17:39:44 GMT
+      x-amzn-requestid:
+      - 859693b8-a6fb-11e8-8734-d9947b443859
+      access-control-allow-origin:
+      - "*"
+      x-amz-apigw-id:
+      - MFqnDFC2oAMF1UQ=
+      x-amzn-trace-id:
+      - Root=1-5b7ef160-5df372f204323e67c4b2d9ac;Sampled=0
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 28879ea479681240c8556dfcaa67e98c.cloudfront.net (CloudFront)
+      x-amz-cf-id:
+      - yoOMrcmPL1bokiV7BZzqy0cwQ9bDgcEId6tb2Kh39nWvKw-jv8mXUw==
+    body:
+      encoding: UTF-8
+      string: '{"total":0,"from":0,"size":5,"hits":[]}'
+    http_version: 
+  recorded_at: Thu, 23 Aug 2018 17:39:44 GMT
+recorded_with: VCR 4.0.0

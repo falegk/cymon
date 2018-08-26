@@ -1,6 +1,12 @@
-# Cymon [![Build Status](https://travis-ci.org/falegk/cymon.svg?branch=master)](https://travis-ci.org/falegk/cymon)
+# Cymon
+[![Gem Version](https://badge.fury.io/rb/cymon.svg)](https://badge.fury.io/rb/cymon)
+[![Build Status](https://travis-ci.org/falegk/cymon.svg?branch=master)](https://travis-ci.org/falegk/cymon)
 
 A Ruby client gem for [Cymon.io](https://cymon.io) API
+
+| Branch | Cymon API |
+| ------ | ------ |
+| _Master_ | v2 |
 
 ## Installation
 
@@ -34,21 +40,48 @@ resp.body
 
 ```
 
+## Usage with authentication
+```
+# Init a client
+client = Cymon.client(username: 'yourname', password: 'yourpass')
+client.auth.login
+or
+client = Cymon.client
+client.auth.login(username: 'yourname', password: 'yourpass')
+
+or if you have an active JWT token
+
+client = Cymon.client(token: 'jwtoken')
+
+# /search endpoint
+# Seach By IP (max limit size is 10 for unauthoenticated user, and 100 for authenticated users)
+resp = client.search.by_ip('209.90.88.140', size: 20)
+resp.status
+    => 200
+resp.body
+    => {"total"=>14, "from"=>0, "size"=>20, "hits"=>[{...}, {...}]}
+
+```
+
+
 ## Current Endpoints
 
-| Plugin | README |
+| Command | Endpoint |
 | ------ | ------ |
+| client = Cymon.client | Init a client |
+| **Auth** | http://docs.cymon.io/#header-authentication |
+| client.auth.login | http://docs.cymon.io/#auth-login-post |
 | **Search** | http://docs.cymon.io/#search |
-| .by_ip | http://docs.cymon.io/#search-search-by-ip-get |
-| .by_domain | http://docs.cymon.io/#search-search-by-domain-get |
-| .by_hostname | http://docs.cymon.io/#search-search-by-hostname-get |
-| .by_md5 | http://docs.cymon.io/#search-search-by-md5-get |
-| .by_sha1 | http://docs.cymon.io/#search-search-by-sha1-get |
-| .by_sha256 | http://docs.cymon.io/#search-search-by-sha256-get |
-| .by_term | http://docs.cymon.io/#search-search-by-term-get |
+| client.search.by_ip | http://docs.cymon.io/#search-search-by-ip-get |
+| client.search.by_domain | http://docs.cymon.io/#search-search-by-domain-get |
+| client.search.by_hostname | http://docs.cymon.io/#search-search-by-hostname-get |
+| client.search.by_md5 | http://docs.cymon.io/#search-search-by-md5-get |
+| client.search.by_sha1 | http://docs.cymon.io/#search-search-by-sha1-get |
+| client.search.by_sha256 | http://docs.cymon.io/#search-search-by-sha256-get |
+| client.search.by_term | http://docs.cymon.io/#search-search-by-term-get |
 | **Feeds** | http://docs.cymon.io/#feeds |
-| .all | http://docs.cymon.io/#feeds-list-get |
-| .find | http://docs.cymon.io/#feeds-get-feed-get |
+| client.feed.all | http://docs.cymon.io/#feeds-list-get |
+| client.feed.find | http://docs.cymon.io/#feeds-get-feed-get |
 
 
 ## Development

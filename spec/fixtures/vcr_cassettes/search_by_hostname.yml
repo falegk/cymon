@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cymon.io/v2/ioc/search/hostname/kamadenlai.5gbfree.com?size=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      content-length:
+      - '3119'
+      connection:
+      - close
+      date:
+      - Thu, 23 Aug 2018 17:39:42 GMT
+      x-amzn-requestid:
+      - 84a8b0c4-a6fb-11e8-9614-83aee497ec8f
+      access-control-allow-origin:
+      - "*"
+      x-amz-apigw-id:
+      - MFqmzHrFoAMFxlA=
+      x-amzn-trace-id:
+      - Root=1-5b7ef15e-1ae9b67d287042217b55019d;Sampled=0
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 07d4f80c7e2e23be97d69a45b9010e6a.cloudfront.net (CloudFront)
+      x-amz-cf-id:
+      - PkJxibnE2jU7SXxhqwUUQZC7xMcAvjBm3HqRQndOj79i3mTjWfMQFg==
+    body:
+      encoding: UTF-8
+      string: '{"total":28,"from":0,"size":5,"hits":[{"title":"Phishing activity","description":"Website:
+        alanmaclennan.5gbfree.com \nIP: 209.90.88.139 \nClassification: PSH \nAdded:
+        8/16/2018 3:20:01 PM \nAdded By: TeMerc","link":"http://hosts-file.net/?s=alanmaclennan.5gbfree.com","reported_by":"cymon","feed":"hosts-file.net","feed_id":"AVsGZTOOVjrVcoBZyoiQ","timestamp":"2018-08-16T15:20:00.000Z","tags":["phishing"],"ioc":{"hostname":"alanmaclennan.5gbfree.com","domain":"5gbfree.com","ip":"209.90.88.139"},"location":{"country":"US","city":"Orem","point":{"lon":-111.6761,"lat":40.2968}},"id":"acffff47725a96123644db6e7707107f29c69f6efb75616e42da7bb01db58da4"},{"title":"Phishing
+        activity","description":"Website: reshmapafforrd.5gbfree.com \nIP: 92.242.140.2
+        \nClassification: PSH \nAdded: 8/3/2018 12:58:25 AM \nAdded By: TeMerc","link":"http://hosts-file.net/?s=reshmapafforrd.5gbfree.com","reported_by":"cymon","feed":"hosts-file.net","feed_id":"AVsGZTOOVjrVcoBZyoiQ","timestamp":"2018-08-03T00:58:00.000Z","tags":["phishing"],"ioc":{"hostname":"reshmapafforrd.5gbfree.com","domain":"5gbfree.com","ip":"92.242.140.2"},"id":"6696cb5238b14328831a2460e6509e1bac2755a1f1eb4d75cdda5ac4c79032ac"},{"title":"Site
+        engaged in malware distribution","description":"Website: www.ahalam.5gbfree.com
+        \nIP: 209.90.88.139 \nClassification: EMD \nAdded: 6/12/2018 11:17:11 AM \nAdded
+        By: Stefan","link":"http://hosts-file.net/?s=www.ahalam.5gbfree.com","reported_by":"cymon","feed":"hosts-file.net","feed_id":"AVsGZTOOVjrVcoBZyoiQ","timestamp":"2018-06-12T11:17:00.000Z","tags":["distribution","malware","exploit"],"ioc":{"hostname":"www.ahalam.5gbfree.com","domain":"5gbfree.com","ip":"209.90.88.139"},"location":{"country":"US","city":"Orem","point":{"lon":-111.6761,"lat":40.2968}},"id":"88a9255dfe987495dbc5c4f5a7830078aa12935f2845038dae0a2d65c41af903"},{"title":"Site
+        engaged in malware distribution","description":"Website: ahalam.5gbfree.com
+        \nIP: 209.90.88.139 \nClassification: EMD \nAdded: 6/12/2018 11:10:35 AM \nAdded
+        By: Stefan","link":"http://hosts-file.net/?s=ahalam.5gbfree.com","reported_by":"cymon","feed":"hosts-file.net","feed_id":"AVsGZTOOVjrVcoBZyoiQ","timestamp":"2018-06-12T11:10:00.000Z","tags":["distribution","malware","exploit"],"ioc":{"hostname":"ahalam.5gbfree.com","domain":"5gbfree.com","ip":"209.90.88.139"},"location":{"country":"US","city":"Orem","point":{"lon":-111.6761,"lat":40.2968}},"id":"3434b1234212c79e2a4f82eaabb171fdf1423b9f44275f4ffa8f25edd4904aed"},{"title":"Site
+        engaged in malware distribution","description":"Website: www.vala.5gbfree.com
+        \nIP: 209.90.88.139 \nClassification: EMD \nAdded: 6/10/2018 3:05:17 PM \nAdded
+        By: Stefan","link":"http://hosts-file.net/?s=www.vala.5gbfree.com","reported_by":"cymon","feed":"hosts-file.net","feed_id":"AVsGZTOOVjrVcoBZyoiQ","timestamp":"2018-06-10T15:05:00.000Z","tags":["distribution","malware","exploit"],"ioc":{"hostname":"www.vala.5gbfree.com","domain":"5gbfree.com","ip":"209.90.88.139"},"location":{"country":"US","city":"Orem","point":{"lon":-111.6761,"lat":40.2968}},"id":"6f9aae238751699a9da47c4553a12fd5c981ecaa34ed841ebc3a0e02e8f1e919"}]}'
+    http_version: 
+  recorded_at: Thu, 23 Aug 2018 17:39:43 GMT
+recorded_with: VCR 4.0.0

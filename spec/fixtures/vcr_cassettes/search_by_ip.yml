@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cymon.io/v2/ioc/search/ip/209.90.88.140?size=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      content-length:
+      - '3037'
+      connection:
+      - close
+      date:
+      - Thu, 23 Aug 2018 17:39:40 GMT
+      x-amzn-requestid:
+      - 83638681-a6fb-11e8-9223-39900f282dc9
+      access-control-allow-origin:
+      - "*"
+      x-amz-apigw-id:
+      - MFqmeFBAoAMFQxA=
+      x-amzn-trace-id:
+      - Root=1-5b7ef15c-c7dda9b8339c21686a2cfb2c;Sampled=0
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 667eed948d94e776b712f69a6cda4ac7.cloudfront.net (CloudFront)
+      x-amz-cf-id:
+      - HNWHPELVI2CnQshJG-hQ_xE9nsPrncwTV8PmBVZO0nnM52sBVtOtGQ==
+    body:
+      encoding: UTF-8
+      string: '{"total":14,"from":0,"size":5,"hits":[{"title":"Phishing campaign targeting
+        Wells Fargo & Company","description":"Brand targeted: Wells Fargo & Company","link":"https://openphish.com","reported_by":"cymon","feed":"OpenPhish","feed_id":"AVsGgHRIVjrVcoBZyoiV","timestamp":"2018-04-11T20:56:26.000Z","tags":["phishing"],"ioc":{"url":"http://onlinehelo.5gbfree.com/Online/service/second.html","hostname":"onlinehelo.5gbfree.com","domain":"5gbfree.com","ip":"209.90.88.140"},"location":{"country":"US","city":"Orem","point":{"lon":-111.6761,"lat":40.2968}},"id":"2178da322467696608712518a3e555e16270d8220c5336b7472ab8a6a701fa05"},{"title":"Phishing
+        campaign targeting Wells Fargo & Company","description":"Brand targeted: Wells
+        Fargo & Company","link":"https://openphish.com","reported_by":"cymon","feed":"OpenPhish","feed_id":"AVsGgHRIVjrVcoBZyoiV","timestamp":"2018-04-11T20:56:26.000Z","tags":["phishing"],"ioc":{"url":"http://onlinehelo.5gbfree.com/Online/service/","hostname":"onlinehelo.5gbfree.com","domain":"5gbfree.com","ip":"209.90.88.140"},"location":{"country":"US","city":"Orem","point":{"lon":-111.6761,"lat":40.2968}},"id":"1a1f208f706d81b5f25c51824cf2124bcbfc7942be704e77c5e637e628898f87"},{"title":"Phishing
+        campaign targeting AT&T Inc.","description":"Brand targeted: AT&T Inc.","link":"https://openphish.com","reported_by":"cymon","feed":"OpenPhish","feed_id":"AVsGgHRIVjrVcoBZyoiV","timestamp":"2018-04-05T15:33:21.000Z","tags":["phishing"],"ioc":{"url":"http://etyeuie.5gbfree.com/gyu/Indexxatt.htm","hostname":"etyeuie.5gbfree.com","domain":"5gbfree.com","ip":"209.90.88.140"},"location":{"country":"US","city":"Orem","point":{"lon":-111.6761,"lat":40.2968}},"ipwhois":{"net":{"name":"HGBLOCK-10","handle":"NET-192-185-0-0-1"},"org":{"name":"WEBSITEWELCOME.COM","handle":"BO"}},"id":"51f331daefe7e8b9c3df4f79c814ebb9a0a5bda7e9d560eaf52513828d1a77d7"},{"title":"Phishing
+        campaign targeting Bank of America","description":"Brand targeted: Bank of
+        America","link":"https://openphish.com","reported_by":"cymon","feed":"OpenPhish","feed_id":"AVsGgHRIVjrVcoBZyoiV","timestamp":"2018-03-19T07:56:07.000Z","tags":["phishing"],"ioc":{"url":"http://bn46te54tff5443w.5gbfree.com/d4fre5/sitekeyverification.php","hostname":"bn46te54tff5443w.5gbfree.com","domain":"5gbfree.com","ip":"209.90.88.140"},"location":{"country":"US","city":"Orem","point":{"lon":-111.6761,"lat":40.2968}},"id":"ff1f9214dae946cc4195b5e5a5f902822fc7c2320259ae5d900d153f87a8ee6a"},{"title":"Phishing
+        campaign targeting Bank of America","description":"Brand targeted: Bank of
+        America","link":"https://openphish.com","reported_by":"cymon","feed":"OpenPhish","feed_id":"AVsGgHRIVjrVcoBZyoiV","timestamp":"2018-03-19T07:30:14.000Z","tags":["phishing"],"ioc":{"url":"http://bn46te54tff5443w.5gbfree.com/d4fre5/index.php","hostname":"bn46te54tff5443w.5gbfree.com","domain":"5gbfree.com","ip":"209.90.88.140"},"location":{"country":"US","city":"Orem","point":{"lon":-111.6761,"lat":40.2968}},"id":"50d52f9b53e66e5242e69d5773dee8aab8936c92036c0b05adc3204144b73634"}]}'
+    http_version: 
+  recorded_at: Thu, 23 Aug 2018 17:39:40 GMT
+recorded_with: VCR 4.0.0

@@ -3,13 +3,14 @@ require 'faraday_middleware'
 
 require 'cymon/configuration'
 require 'cymon/endpoint/base'
+require 'cymon/endpoint/auth'
 require 'cymon/endpoint/search'
 require 'cymon/endpoint/feed'
 
 module Cymon
   class Client
 
-    ENDPOINTS = [:search, :feed].freeze
+    ENDPOINTS = [:auth, :search, :feed].freeze
 
     attr_reader :configuration
 
@@ -31,10 +32,10 @@ module Cymon
         faraday.options.timeout = @configuration.timeout # open/read timeout in seconds
         faraday.adapter Faraday.default_adapter
 
-        # TODO; Implementation for authenticated users http://docs.cymon.io/#header-authentication
-        # faraday.use :http_cache, store: Rails.cache
-        # faraday.authorization :Bearer, FOUNDATION_AUTH_KEY
-        # faraday.headers['Authorization']
+        if @configuration.token
+          faraday.authorization :Bearer, @configuration.token
+          faraday.headers['Authorization']
+        end
       end
     end
 

@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cymon.io/v2//feeds?from=5&size=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      content-length:
+      - '3241'
+      connection:
+      - close
+      date:
+      - Sun, 26 Aug 2018 10:49:18 GMT
+      x-amzn-requestid:
+      - ae800047-a91d-11e8-bd3d-09bf93bd0b69
+      access-control-allow-origin:
+      - "*"
+      x-amz-apigw-id:
+      - MOnTNG7XoAMFahg=
+      x-amzn-trace-id:
+      - Root=1-5b8285ae-3e960616877055f537f52c73;Sampled=0
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 e0979791e4e8140f905f62a6402a06d0.cloudfront.net (CloudFront)
+      x-amz-cf-id:
+      - 86ZhuEUGiEcshc9iSoP2-UyisdqMIf9s2g5JsC426kXjPtA5cJUosw==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0b3RhbCI6OTEsImZyb20iOjUsInNpemUiOjQsImZlZWRzIjpbeyJpZCI6IkFWc0dZQWh4VmpyVmNvQlp5b2lLIiwibmFtZSI6IkJhbWJlbmVrIEJhbmpvcmkgVHJhY2tlciIsInNsdWciOiJiYW1iZW5lay1iYW5qb3JpLXRyYWNrZXIiLCJsaW5rIjoiaHR0cDovL29zaW50LmJhbWJlbmVrY29uc3VsdGluZy5jb20vZmVlZHMvIiwicHJpdmFjeSI6InB1YmxpYyIsInRhZ3MiOlsibWFsd2FyZSIsImMyIiwiYyZjIiwiYmFuam9yaSJdLCJ0b3MiOiJodHRwOi8vb3NpbnQuYmFtYmVuZWtjb25zdWx0aW5nLmNvbS9saWNlbnNlLnR4dCIsImRlc2NyaXB0aW9uIjoiQmFtYmVuZWsgQ29uc3VsdGluZyBpcyBhbiBJVCBjb25zdWx0aW5nIGZpcm0gZm9jdXNlZCBvbiBjeWJlcnNlY3VyaXR5IGFuZCBjeWJlcmNyaW1lLiBFdmVyeSBkYXksIHRoZXJlIGlzIGFub3RoZXIgc3RvcnkgYWJvdXQgYW5vdGhlciBjb21wYW55IGhhdmluZyB0aGVpciBiYW5raW5nIGFjY291bnRzIGRyYWluZWQsIHNvbWVvbmUgaGF2aW5nIHRoZWlyIGlkZW50aXR5IHN0b2xlbiwgb3IgY3JpdGljYWwgaW5mcmFzdHJ1Y3R1cmUgYmVpbmcgdGFrZW4gb2ZmbGluZSBieSBob3N0aWxlIGVudGl0aWVzLiAgTGVkIGJ5IElUIHNlY3VyaXR5IGV4cGVydCwgSm9obiBCYW1iZW5laywgd2UgaGF2ZSB0aGUgcmVzb3VyY2VzIHRvIGJyaW5nIHRvIHlvdXIgYnVzaW5lc3Mgc28geW91IGNhbiBiZSBzdXJlIHlvdXIgb3JnYW5pemF0aW9uIGFuZCB5b3VyIGN1c3RvbWVyc+KAmSBkYXRhIGlzIHNhZmUuIiwibG9nbyI6Imh0dHBzOi8vaS5pbWd1ci5jb20vZzdxWXZXOS5wbmciLCJpc19vd25lciI6ZmFsc2UsImlzX2FkbWluIjpmYWxzZSwiaXNfbWVtYmVyIjpmYWxzZSwiaXNfZ3Vlc3QiOmZhbHNlLCJjcmVhdGVkIjoiMjAxNy0wMy0yNVQxNjo1MDowOC41NDdaIiwidXBkYXRlZCI6IjIwMTctMDYtMTFUMjI6NTU6MjcuODM5WiJ9LHsiaWQiOiJBVnNHZ1M3WVZqclZjb0JaeW9pZiIsIm5hbWUiOiJCYW1iZW5layBCZWJsb2gvVVJMWm9uZSBUcmFja2VyIiwic2x1ZyI6ImJhbWJlbmVrLWJlYmxvaHVybHpvbmUtdHJhY2tlciIsImxpbmsiOiJodHRwOi8vb3NpbnQuYmFtYmVuZWtjb25zdWx0aW5nLmNvbS9mZWVkcy8iLCJwcml2YWN5IjoicHVibGljIiwidGFncyI6WyJtYWx3YXJlIiwiYzIiLCJjJmMiLCJiZWJsb2gvdXJsem9uZSJdLCJ0b3MiOiJodHRwOi8vb3NpbnQuYmFtYmVuZWtjb25zdWx0aW5nLmNvbS9saWNlbnNlLnR4dCIsImRlc2NyaXB0aW9uIjoiQmFtYmVuZWsgQ29uc3VsdGluZyBpcyBhbiBJVCBjb25zdWx0aW5nIGZpcm0gZm9jdXNlZCBvbiBjeWJlcnNlY3VyaXR5IGFuZCBjeWJlcmNyaW1lLiBFdmVyeSBkYXksIHRoZXJlIGlzIGFub3RoZXIgc3RvcnkgYWJvdXQgYW5vdGhlciBjb21wYW55IGhhdmluZyB0aGVpciBiYW5raW5nIGFjY291bnRzIGRyYWluZWQsIHNvbWVvbmUgaGF2aW5nIHRoZWlyIGlkZW50aXR5IHN0b2xlbiwgb3IgY3JpdGljYWwgaW5mcmFzdHJ1Y3R1cmUgYmVpbmcgdGFrZW4gb2ZmbGluZSBieSBob3N0aWxlIGVudGl0aWVzLiAgTGVkIGJ5IElUIHNlY3VyaXR5IGV4cGVydCwgSm9obiBCYW1iZW5laywgd2UgaGF2ZSB0aGUgcmVzb3VyY2VzIHRvIGJyaW5nIHRvIHlvdXIgYnVzaW5lc3Mgc28geW91IGNhbiBiZSBzdXJlIHlvdXIgb3JnYW5pemF0aW9uIGFuZCB5b3VyIGN1c3RvbWVyc+KAmSBkYXRhIGlzIHNhZmUuIiwibG9nbyI6Imh0dHBzOi8vaS5pbWd1ci5jb20vZzdxWXZXOS5wbmciLCJpc19vd25lciI6ZmFsc2UsImlzX2FkbWluIjpmYWxzZSwiaXNfbWVtYmVyIjpmYWxzZSwiaXNfZ3Vlc3QiOmZhbHNlLCJjcmVhdGVkIjoiMjAxNy0wMy0yNVQxNzoyNjoyMS4wNTNaIiwidXBkYXRlZCI6IjIwMTctMDYtMTFUMjI6NTc6MTUuOTUxWiJ9LHsiaWQiOiJBVjY0R0tweGRnaWpPcVNpTXlJcSIsIm5hbWUiOiJCYW1iZW5layBCZWRlcCBUcmFja2VyIiwic2x1ZyI6ImJhbWJlbmVrLWJlZGVwLXRyYWNrZXIiLCJsaW5rIjoiaHR0cDovL29zaW50LmJhbWJlbmVrY29uc3VsdGluZy5jb20vZmVlZHMvIiwicHJpdmFjeSI6InB1YmxpYyIsInRhZ3MiOlsibWFsd2FyZSIsImMyIiwiYyZjIiwiYmVkZXAiXSwidG9zIjoiaHR0cDovL29zaW50LmJhbWJlbmVrY29uc3VsdGluZy5jb20vbGljZW5zZS50eHQiLCJkZXNjcmlwdGlvbiI6bnVsbCwibG9nbyI6bnVsbCwiaXNfb3duZXIiOmZhbHNlLCJpc19hZG1pbiI6ZmFsc2UsImlzX21lbWJlciI6ZmFsc2UsImlzX2d1ZXN0IjpmYWxzZSwiY3JlYXRlZCI6IjIwMTctMDktMjVUMDg6MTI6NTcuNjg4WiIsInVwZGF0ZWQiOiIyMDE3LTA5LTI1VDA4OjEyOjU3LjY4OFoifSx7ImlkIjoiQVZzR2dUVWVWanJWY29CWnlvaWsiLCJuYW1lIjoiQmFtYmVuZWsgQmVlYm9uZSBUcmFja2VyIiwic2x1ZyI6ImJhbWJlbmVrLWJlZWJvbmUtdHJhY2tlciIsImxpbmsiOiJodHRwOi8vb3NpbnQuYmFtYmVuZWtjb25zdWx0aW5nLmNvbS9mZWVkcy8iLCJwcml2YWN5IjoicHVibGljIiwidGFncyI6WyJtYWx3YXJlIiwiYzIiLCJjJmMiLCJiZWVib25lIl0sInRvcyI6Imh0dHA6Ly9vc2ludC5iYW1iZW5la2NvbnN1bHRpbmcuY29tL2xpY2Vuc2UudHh0IiwiZGVzY3JpcHRpb24iOiJCYW1iZW5layBDb25zdWx0aW5nIGlzIGFuIElUIGNvbnN1bHRpbmcgZmlybSBmb2N1c2VkIG9uIGN5YmVyc2VjdXJpdHkgYW5kIGN5YmVyY3JpbWUuIEV2ZXJ5IGRheSwgdGhlcmUgaXMgYW5vdGhlciBzdG9yeSBhYm91dCBhbm90aGVyIGNvbXBhbnkgaGF2aW5nIHRoZWlyIGJhbmtpbmcgYWNjb3VudHMgZHJhaW5lZCwgc29tZW9uZSBoYXZpbmcgdGhlaXIgaWRlbnRpdHkgc3RvbGVuLCBvciBjcml0aWNhbCBpbmZyYXN0cnVjdHVyZSBiZWluZyB0YWtlbiBvZmZsaW5lIGJ5IGhvc3RpbGUgZW50aXRpZXMuICBMZWQgYnkgSVQgc2VjdXJpdHkgZXhwZXJ0LCBKb2huIEJhbWJlbmVrLCB3ZSBoYXZlIHRoZSByZXNvdXJjZXMgdG8gYnJpbmcgdG8geW91ciBidXNpbmVzcyBzbyB5b3UgY2FuIGJlIHN1cmUgeW91ciBvcmdhbml6YXRpb24gYW5kIHlvdXIgY3VzdG9tZXJz4oCZIGRhdGEgaXMgc2FmZS4iLCJsb2dvIjoiaHR0cHM6Ly9pLmltZ3VyLmNvbS9nN3FZdlc5LnBuZyIsImlzX293bmVyIjpmYWxzZSwiaXNfYWRtaW4iOmZhbHNlLCJpc19tZW1iZXIiOmZhbHNlLCJpc19ndWVzdCI6ZmFsc2UsImNyZWF0ZWQiOiIyMDE3LTAzLTI1VDE3OjI2OjIyLjM2N1oiLCJ1cGRhdGVkIjoiMjAxNy0wNi0xMVQyMjo1NzozMS4wMjRaIn1dfQ==
+    http_version: 
+  recorded_at: Sun, 26 Aug 2018 10:49:18 GMT
+- request:
+    method: get
+    uri: https://api.cymon.io/v2//feeds/AVsGYAhxVjrVcoBZyoiK
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      content-length:
+      - '915'
+      connection:
+      - close
+      date:
+      - Sun, 26 Aug 2018 10:49:24 GMT
+      x-amzn-requestid:
+      - b221b7c3-a91d-11e8-b5a3-03f7d47f4d64
+      access-control-allow-origin:
+      - "*"
+      x-amz-apigw-id:
+      - MOnUKEa6IAMFQLw=
+      x-amzn-trace-id:
+      - Root=1-5b8285b4-be195994e60d823d2aa22600;Sampled=0
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 a22ee9ab15c998bce94f1f4d2a7792ee.cloudfront.net (CloudFront)
+      x-amz-cf-id:
+      - iMq6pyRNCPL6SKAAokw27Clhma3NypXbV9sB28qtrwqWK9DeGMMYcQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6IkFWc0dZQWh4VmpyVmNvQlp5b2lLIiwibmFtZSI6IkJhbWJlbmVrIEJhbmpvcmkgVHJhY2tlciIsInNsdWciOiJiYW1iZW5lay1iYW5qb3JpLXRyYWNrZXIiLCJsaW5rIjoiaHR0cDovL29zaW50LmJhbWJlbmVrY29uc3VsdGluZy5jb20vZmVlZHMvIiwicHJpdmFjeSI6InB1YmxpYyIsInRhZ3MiOlsibWFsd2FyZSIsImMyIiwiYyZjIiwiYmFuam9yaSJdLCJ0b3MiOiJodHRwOi8vb3NpbnQuYmFtYmVuZWtjb25zdWx0aW5nLmNvbS9saWNlbnNlLnR4dCIsImRlc2NyaXB0aW9uIjoiQmFtYmVuZWsgQ29uc3VsdGluZyBpcyBhbiBJVCBjb25zdWx0aW5nIGZpcm0gZm9jdXNlZCBvbiBjeWJlcnNlY3VyaXR5IGFuZCBjeWJlcmNyaW1lLiBFdmVyeSBkYXksIHRoZXJlIGlzIGFub3RoZXIgc3RvcnkgYWJvdXQgYW5vdGhlciBjb21wYW55IGhhdmluZyB0aGVpciBiYW5raW5nIGFjY291bnRzIGRyYWluZWQsIHNvbWVvbmUgaGF2aW5nIHRoZWlyIGlkZW50aXR5IHN0b2xlbiwgb3IgY3JpdGljYWwgaW5mcmFzdHJ1Y3R1cmUgYmVpbmcgdGFrZW4gb2ZmbGluZSBieSBob3N0aWxlIGVudGl0aWVzLiAgTGVkIGJ5IElUIHNlY3VyaXR5IGV4cGVydCwgSm9obiBCYW1iZW5laywgd2UgaGF2ZSB0aGUgcmVzb3VyY2VzIHRvIGJyaW5nIHRvIHlvdXIgYnVzaW5lc3Mgc28geW91IGNhbiBiZSBzdXJlIHlvdXIgb3JnYW5pemF0aW9uIGFuZCB5b3VyIGN1c3RvbWVyc+KAmSBkYXRhIGlzIHNhZmUuIiwibG9nbyI6Imh0dHBzOi8vaS5pbWd1ci5jb20vZzdxWXZXOS5wbmciLCJpc19vd25lciI6ZmFsc2UsImlzX2FkbWluIjpmYWxzZSwiaXNfbWVtYmVyIjpmYWxzZSwiaXNfZ3Vlc3QiOmZhbHNlLCJjcmVhdGVkIjoiMjAxNy0wMy0yNVQxNjo1MDowOC41NDdaIiwidXBkYXRlZCI6IjIwMTctMDYtMTFUMjI6NTU6MjcuODM5WiJ9
+    http_version: 
+  recorded_at: Sun, 26 Aug 2018 10:49:24 GMT
+recorded_with: VCR 4.0.0

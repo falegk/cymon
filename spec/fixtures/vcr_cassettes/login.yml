@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.cymon.io/v2//auth/login
+    body:
+      encoding: UTF-8
+      string: '{"username":"cymon_ruby","password":"cymon_ruby_pass"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      content-length:
+      - '377'
+      connection:
+      - close
+      date:
+      - Sun, 26 Aug 2018 14:10:29 GMT
+      x-amzn-requestid:
+      - c86d0cf0-a939-11e8-9e52-47c741482670
+      access-control-allow-origin:
+      - "*"
+      x-amz-apigw-id:
+      - MPExDHPpIAMFuew=
+      x-amzn-trace-id:
+      - Root=1-5b82b4d3-fcc0f309eb7be242a8067a96;Sampled=0
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 7907ada877f3f98933a06c5aef6c574b.cloudfront.net (CloudFront)
+      x-amz-cf-id:
+      - Z69AbDJzVwzlbKRP_PPyVcet3kBDRHdFG1BSxBbuoUfM_ZzrsXqGSQ==
+    body:
+      encoding: UTF-8
+      string: '{"jwt":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpBVCJ9.eyJpc19wcmVtaXVtIjowLCJpc19zdXBlcnVzZXIiOjAsImRhdGVfam9pbmVkIjoiMjAxOC0wOC0yNlQxMToyNToyOC4xNTZaIiwidXNlcm5hbWUiOiJmYWxlZ2siLCJpc19hY3RpdmUiOjEsImxhc3RfbG9naW4iOiIyMDE4LTA4LTI2VDE0OjA3OjI1LjY0NloiLCJpc19zdGFmZiI6MCwiaWF0IjoxNTM1MjkyNjI5LCJleHAiOjE1MzUzMzU4Mjl9.m0YeoXF2gnkbOM4f7PELGajlDSw-RT20b6It0VXz2Zg","message":"token
+        granted"}'
+    http_version: 
+  recorded_at: Sun, 26 Aug 2018 14:10:29 GMT
+recorded_with: VCR 4.0.0

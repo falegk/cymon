@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cymon.io/v2/ioc/search/term/locky?size=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      content-length:
+      - '2655'
+      connection:
+      - close
+      date:
+      - Thu, 23 Aug 2018 17:39:46 GMT
+      x-amzn-requestid:
+      - 86b37576-a6fb-11e8-afac-09f081a67f52
+      access-control-allow-origin:
+      - "*"
+      x-amz-apigw-id:
+      - MFqnVHjeIAMFzDQ=
+      x-amzn-trace-id:
+      - Root=1-5b7ef162-c8aa0296be4757f682c439a6;Sampled=0
+      x-cache:
+      - Miss from cloudfront
+      via:
+      - 1.1 24558db5d06d73a81c4b2d226d3cdbd5.cloudfront.net (CloudFront)
+      x-amz-cf-id:
+      - Y8ija31lZQNmekNA1SJaM1PPhDtH19oL79tX--V2or3UGU06S28Hxw==
+    body:
+      encoding: UTF-8
+      string: '{"total":88,"from":0,"size":5,"hits":[{"title":"Ransomware command
+        & control (C2) server","description":"Registrar: ","link":"https://ransomwaretracker.abuse.ch/host/83.217.11.193/","reported_by":"cymon","feed":"Abuse.ch
+        Ransomware Tracker","feed_id":"AVsGgRbdVjrVcoBZyoid","timestamp":"2018-08-12T00:46:13.000Z","tags":["c2","locky","c&c","ransomware"],"ioc":{"url":"http://83.217.11.193/linuxsucks.php","hostname":"83.217.11.193","ip":"83.217.11.193"},"location":{"country":"RU","city":"Moscow","point":{"lon":37.615,"lat":55.752}},"id":"2a70bf6517c0d70481d626895f191f68b3a2b841f81f19847305d30e0960ddcb"},{"title":"Ransomware
+        command & control (C2) server","description":"Registrar: Danesco Trading Ltd.","link":"https://ransomwaretracker.abuse.ch/host/pagaldaily.com/","reported_by":"cymon","feed":"Abuse.ch
+        Ransomware Tracker","feed_id":"AVsGgRbdVjrVcoBZyoid","timestamp":"2018-08-10T05:43:15.000Z","tags":["c2","locky","c&c","ransomware"],"ioc":{"url":"http://pagaldaily.com/apache_handler.php","hostname":"pagaldaily.com","domain":"pagaldaily.com","ip":"185.82.217.102"},"id":"1ab106b3407ba054b574e918e04137f9b8c05578cb14bacf072e07f36f756ce0"},{"title":"Ransomware
+        command & control (C2) server","description":"Registrar: ","link":"https://ransomwaretracker.abuse.ch/host/185.82.217.102/","reported_by":"cymon","feed":"Abuse.ch
+        Ransomware Tracker","feed_id":"AVsGgRbdVjrVcoBZyoid","timestamp":"2018-08-10T05:43:15.000Z","tags":["c2","locky","c&c","ransomware"],"ioc":{"url":"http://185.82.217.102/apache_handler.php","hostname":"185.82.217.102","ip":"185.82.217.102"},"id":"669a2786ad2b9de25b99345ab0dfbc4a50cbfa75d30d00d3f2742c8d40fd3f75"},{"title":"Ransomware
+        command & control (C2) server","description":"Registrar: Danesco Trading Ltd.","link":"https://ransomwaretracker.abuse.ch/host/pagaldaily.com/","reported_by":"cymon","feed":"Abuse.ch
+        Ransomware Tracker","feed_id":"AVsGgRbdVjrVcoBZyoid","timestamp":"2018-08-10T05:43:15.000Z","tags":["c2","locky","c&c","ransomware"],"ioc":{"url":"http://pagaldaily.com/apache_handler.php","hostname":"pagaldaily.com","domain":"pagaldaily.com"},"id":"0f88a514bb3a58b0d9ddc1ea869220dbf537767e87b2c2c84be59d06d9b75fa5"},{"title":"Ransomware
+        command & control (C2) server","description":"Registrar: ","link":"https://ransomwaretracker.abuse.ch/host/91.226.92.204/","reported_by":"cymon","feed":"Abuse.ch
+        Ransomware Tracker","feed_id":"AVsGgRbdVjrVcoBZyoid","timestamp":"2018-08-09T16:50:50.000Z","tags":["c2","locky","c&c","ransomware"],"ioc":{"url":"http://91.226.92.204/checkupdate","hostname":"91.226.92.204","ip":"91.226.92.204"},"id":"9df4c37d6b11656e9c7fa981a99c5a76441741988e08d078d79fa3edee3cffd4"}]}'
+    http_version: 
+  recorded_at: Thu, 23 Aug 2018 17:39:46 GMT
+recorded_with: VCR 4.0.0
