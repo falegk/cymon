@@ -4,11 +4,12 @@ require 'faraday_middleware'
 require 'cymon/configuration'
 require 'cymon/endpoint/base'
 require 'cymon/endpoint/search'
+require 'cymon/endpoint/feed'
 
 module Cymon
   class Client
 
-    ENDPOINTS = [:search].freeze
+    ENDPOINTS = [:search, :feed].freeze
 
     attr_reader :configuration
 

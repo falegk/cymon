@@ -46,6 +46,9 @@ resp.body
 | .by_sha1 | http://docs.cymon.io/#search-search-by-sha1-get |
 | .by_sha256 | http://docs.cymon.io/#search-search-by-sha256-get |
 | .by_term | http://docs.cymon.io/#search-search-by-term-get |
+| **Feeds** | http://docs.cymon.io/#feeds |
+| .all | http://docs.cymon.io/#feeds-list-get |
+| .find | http://docs.cymon.io/#feeds-get-feed-get |
 
 
 ## Development

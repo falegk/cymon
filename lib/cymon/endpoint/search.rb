@@ -1,4 +1,3 @@
-require 'cymon/responses/base'
 require 'cymon/responses/search'
 
 module Cymon
