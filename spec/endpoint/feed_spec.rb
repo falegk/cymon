@@ -8,7 +8,7 @@ RSpec.describe Cymon::Endpoint::Feed do
 
   context '#all' do
     let(:response) do
-      VCR.use_cassette('feed_all') do
+      VCR.use_cassette('feed_all', record: :new_episodes) do
         feed.all(params)
       end
     end
@@ -34,7 +34,7 @@ RSpec.describe Cymon::Endpoint::Feed do
 
     let(:response) do
       VCR.use_cassette('feed') do
-        feed.find(feed_id)
+        feed.find(feed_id, record: :new_episodes)
       end
     end
 

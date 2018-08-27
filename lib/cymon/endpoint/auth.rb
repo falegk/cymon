@@ -3,7 +3,7 @@ require 'cymon/responses/auth'
 module Cymon
   module Endpoint
     class Auth < Base
-      PATH = '/auth'
+      PATH = 'auth'
 
       def url_path
         "#{api_version_path}/#{PATH}"

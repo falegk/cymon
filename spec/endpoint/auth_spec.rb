@@ -7,13 +7,13 @@ RSpec.describe Cymon::Endpoint::Auth do
 
   context '#login' do
     let(:response) do
-      VCR.use_cassette('login') do
+      VCR.use_cassette('login', record: :new_episodes) do
         client.auth.login(creds)
       end
     end
 
     let(:invalid_response) do
-      VCR.use_cassette('login_invalid') do
+      VCR.use_cassette('login_invalid', record: :new_episodes) do
         client.auth.login(invalid_creds)
       end
     end

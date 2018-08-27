@@ -3,7 +3,7 @@ require 'cymon/responses/feed'
 module Cymon
   module Endpoint
     class Feed < Base
-      PATH = '/feeds'
+      PATH = 'feeds'
 
       def url_path
         "#{api_version_path}/#{PATH}"

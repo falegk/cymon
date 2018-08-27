@@ -43,4 +43,47 @@ http_interactions:
       string: '{"errorMessage":"[401] authentication error"}'
     http_version: 
   recorded_at: Sun, 26 Aug 2018 14:10:30 GMT
+- request:
+    method: post
+    uri: https://api.cymon.io/v2/auth/login
+    body:
+      encoding: UTF-8
+      string: '{"username":"invalid","password":"creds"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      content-type:
+      - application/json
+      content-length:
+      - '45'
+      connection:
+      - close
+      date:
+      - Mon, 27 Aug 2018 10:05:19 GMT
+      x-amzn-requestid:
+      - ad923a7d-a9e0-11e8-87a2-f95081279514
+      access-control-allow-origin:
+      - "*"
+      x-amz-apigw-id:
+      - MRzxMFRsoAMFxEw=
+      x-amzn-trace-id:
+      - Root=1-5b83ccd4-84b4e8a2e125724c37623560;Sampled=0
+      x-cache:
+      - Error from cloudfront
+      via:
+      - 1.1 c8850b0c534002fc66b6f42edb15cf49.cloudfront.net (CloudFront)
+      x-amz-cf-id:
+      - Vmw7fOD5gmd3UJb2DwWMLN2HcZheAggDyVTVgj8Ot8CfKisHUPJrDQ==
+    body:
+      encoding: UTF-8
+      string: '{"errorMessage":"[401] authentication error"}'
+    http_version: 
+  recorded_at: Mon, 27 Aug 2018 10:05:19 GMT
 recorded_with: VCR 4.0.0
